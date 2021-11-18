@@ -4,5 +4,5 @@ import com.digitalhouse.blogpessoal.model.Tema;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface TemaRepository extends JpaRepository <Tema, Integer> {
-    public Tema findByTema (String postagem);
+    public Tema findByNome (String nome);
 }

@@ -25,7 +25,7 @@ public class TemaController {
     }
     @GetMapping("/nome/{nome}")
     private ResponseEntity<Tema> getByName (@PathVariable String nome){
-        return ResponseEntity.ok(temaRepository.findByTema(nome));
+        return ResponseEntity.ok(temaRepository.findByNome(nome));
     }
     @PostMapping
     private  ResponseEntity<Tema> post (@RequestBody Tema tema){

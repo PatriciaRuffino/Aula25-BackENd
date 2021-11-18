@@ -25,7 +25,7 @@ public class PostagemController {
     }
     @GetMapping("/titulo/{titulo}")
     private ResponseEntity<List<Postagem>> getByTitulo (@PathVariable String titulo) {
-        return ResponseEntity.ok(postagemRepository.findByPostagem(titulo));
+        return ResponseEntity.ok(postagemRepository.findByTitulo(titulo));
     }
     @PutMapping
     private ResponseEntity<Postagem> put (@RequestBody Postagem postagem){

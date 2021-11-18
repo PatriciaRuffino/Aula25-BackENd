@@ -7,5 +7,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 public interface PostagemRepository extends JpaRepository <Postagem, Integer>  {
-    public List<Postagem> findByPostagem (String postagem);
+    public List<Postagem> findByTitulo (String titulo);
 }
